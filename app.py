@@ -37,6 +37,7 @@ if(selected == 'Diabetes Prediction'):
 
     with col1:
         Pregnancies = st.text_input('Number of Pregnancies')
+        print("hello")
 
     with col2:
         Glucose = st.text_input('Glucose Level')
