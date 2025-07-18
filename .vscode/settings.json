@@ -1,15 +1,23 @@
 {
     "cSpell.words": [
         "chol",
+        "Detrended",
         "exang",
+        "matplotlib",
         "MDVP",
         "munis",
+        "munishupadhyay",
+        "numpy",
         "oldpeak",
         "parkinsons",
         "restecg",
         "RPDE",
+        "scikit",
+        "seaborn",
+        "streamlit",
         "thal",
         "thalach",
+        "Thalassemia",
         "trestbps"
     ]
 }
