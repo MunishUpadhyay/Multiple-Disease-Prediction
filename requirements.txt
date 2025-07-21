@@ -1,11 +1,6 @@
 numpy==1.23.5
 pandas==2.2.3
 scikit-learn==1.6.1
-<<<<<<< HEAD
 streamlit==1.46.1
 streamlit_option_menu==0.4.0
 pickle
-=======
-streamlit
-pickle
->>>>>>> 90b795b08cbc74dcefb0ad2586d054c6f15e595c
