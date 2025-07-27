@@ -2,6 +2,10 @@
 
 A comprehensive machine learning-based system for predicting multiple diseases including Diabetes, Heart Disease, and Parkinson's Disease using various clinical and diagnostic parameters.
 
+## Project Live Link
+
+https://multiple-disease-prediction-pe2j.onrender.com/
+
 ## 🩺 Overview
 
 This system utilizes machine learning algorithms to predict the likelihood of three major diseases based on relevant medical parameters. The system is designed to assist healthcare professionals in early diagnosis and risk assessment.
