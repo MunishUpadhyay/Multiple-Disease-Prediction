@@ -60,6 +60,28 @@ if(selected == 'Diabetes Prediction'):
     with col2:
         Age = st.text_input('Age of the Person')
 
+    try:
+        Pregnancies = float(Pregnancies) if Pregnancies else 0.0
+
+        Glucose = float(Glucose) if Glucose else 0.0
+
+        BloodPressure = float(BloodPressure) if BloodPressure else 0.0
+
+        SkinThickness = float(SkinThickness) if SkinThickness else 0.0
+
+        Insulin = float(Insulin) if Insulin else 0.0
+
+        BMI = float(BMI) if BMI else 0.0
+
+        DiabetesPedigreeFunction = float(DiabetesPedigreeFunction) if DiabetesPedigreeFunction else 0.0
+
+        Age = float(Age) if Age else 0.0
+
+    except ValueError:
+
+        st.error("Please enter valid numeric values for all input fields for Diabetes Prediction.")
+        st.stop() # Stop the script if conversion fails
+
     # code for Prediction
     diabetes_diagnosis = ''
 
@@ -88,10 +110,10 @@ if(selected == 'Heart Disease Prediction'):
         age = st.text_input('Age')
 
     with col2:
-        sex = st.text_input('Sex')
+        sex = st.text_input('Sex (0 = female, 1 = male)')
 
     with col3:
-        cp = st.text_input('Chest Pain types')
+        cp = st.text_input('Chest Pain types (0-3)')
 
     with col1:
         trestbps = st.text_input('Resting Blood Pressure')
@@ -103,24 +125,56 @@ if(selected == 'Heart Disease Prediction'):
         fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
 
     with col1:
-        restecg = st.text_input('Resting Electrocardiographic results')
+        restecg = st.text_input('Resting ECG results (0-2)')
 
     with col2:
         thalach = st.text_input('Maximum Heart Rate achieved')
 
     with col3:
-        exang = st.text_input('Exercise Induced Angina')
+        exang = st.text_input('Exercise Induced Angina (0-1)')
 
     with col1:
         oldpeak = st.text_input('ST depression induced by exercise')
 
     with col2:
-        slope = st.text_input('Slope of the peak exercise ST segment')
+        slope = st.text_input('Slope of peak exercise ST segment')
 
     with col3:
         ca = st.text_input('Major vessels colored by fluoroscopy')
 
     thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversible defect')
+
+    try:
+        age = float(age) if age else 0.0
+
+        sex = float(sex) if sex else 0.0
+
+        cp = float(cp) if cp else 0.0
+
+        trestbps = float(trestbps) if trestbps else 0.0
+
+        chol = float(chol) if chol else 0.0
+
+        fbs = float(fbs) if fbs else 0.0
+
+        restecg = float(restecg) if restecg else 0.0
+
+        thalach = float(thalach) if thalach else 0.0
+
+        exang = float(exang) if exang else 0.0
+
+        oldpeak = float(oldpeak) if oldpeak else 0.0
+
+        slope = float(slope) if slope else 0.0
+
+        ca = float(ca) if ca else 0.0
+
+        thal = float(thal) if thal else 0.0 # 'thal' is outside columns, but still needs conversion
+
+    except ValueError:
+
+        st.error("Please ensure all inputs are valid numbers.")
+        st.stop() # Stop the script if conversion fails
 
     # code for Prediction
     heart_diagnosis = ''
@@ -212,6 +266,56 @@ if(selected == 'Parkinsons Prediction'):
 
     with col2:
         PPE = st.text_input('PPE')
+
+    try:
+        fo = float(fo) if fo else 0.0
+
+        fhi = float(fhi) if fhi else 0.0
+
+        flo = float(flo) if flo else 0.0
+
+        Jitter_percent = float(Jitter_percent) if Jitter_percent else 0.0
+
+        Jitter_Abs = float(Jitter_Abs) if Jitter_Abs else 0.0
+
+        RAP = float(RAP) if RAP else 0.0
+
+        PPQ = float(PPQ) if PPQ else 0.0
+
+        DDP = float(DDP) if DDP else 0.0
+
+        Shimmer = float(Shimmer) if Shimmer else 0.0
+
+        Shimmer_dB = float(Shimmer_dB) if Shimmer_dB else 0.0
+
+        APQ3 = float(APQ3) if APQ3 else 0.0
+
+        APQ5 = float(APQ5) if APQ5 else 0.0
+
+        APQ = float(APQ) if APQ else 0.0
+
+        DDA = float(DDA) if DDA else 0.0
+
+        NHR = float(NHR) if NHR else 0.0
+
+        HNR = float(HNR) if HNR else 0.0
+
+        RPDE = float(RPDE) if RPDE else 0.0
+
+        DFA = float(DFA) if DFA else 0.0
+
+        spread1 = float(spread1) if spread1 else 0.0
+
+        spread2 = float(spread2) if spread2 else 0.0
+
+        D2 = float(D2) if D2 else 0.0
+
+        PPE = float(PPE) if PPE else 0.0
+
+    except ValueError:
+
+        st.error("Please enter valid numeric values for all input fields for Parkinson's Prediction.")
+        st.stop() # Stop the script if conversion fails
 
     # code for prediction
     parkinsons_prediction = ''
