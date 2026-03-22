@@ -4,7 +4,7 @@ A comprehensive machine learning-based system for predicting multiple diseases i
 
 ## Project Live Link
 
-https://multiple-disease-prediction-pe2j.onrender.com/
+https://multiple-disease-prediction-sbdf.onrender.com/
 
 ## 🩺 Overview
 
