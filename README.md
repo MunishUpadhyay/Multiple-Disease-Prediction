@@ -186,7 +186,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Your Name - [munishupadhyay183@.com]
+- Your Name - [MunishUpadhyay]
 - Contributors welcome!
 
 ## 🙏 Acknowledgments
@@ -198,7 +198,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 For questions or support, please contact:
-- Email: your.email@example.com
+- Email: munishupadhyay183@gmail.com
 - GitHub: [MunishUpadhyay](https://github.com/MunishUpadhyay)
 
 ---
